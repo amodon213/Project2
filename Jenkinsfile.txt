@@ -12,7 +12,6 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'pip install selenium'
                     sh 'nohup python rest_app.py &'
 
                 }
